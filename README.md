@@ -1,38 +1,50 @@
-# Projeto Back-End - Processo Seletivo SEPLAG (Analista de TI)
+# Projeto Profissional – Back-End (Java)
 
-Repositório criado para entrega do Projeto Profissional (Back-End) conforme edital.
-O projeto consiste em uma API REST com autenticação JWT, CRUD de entidades e documentação.
+Projeto Profissional desenvolvido para a **Etapa 02 – Avaliação Técnica** do Processo Seletivo Simplificado
+para o cargo de **Analista de Tecnologia da Informação – Back-End (Sênior)**.
 
-## Tecnologias (definir)
-- Linguagem/Framework: (ex.: FastAPI / Spring Boot / NestJS)
-- Banco de dados: PostgreSQL
-- Containerização: Docker + Docker Compose
+## Candidato
+- Nome: Erick de Assunção Barbosa
+
+## Modalidade do Projeto
+- Back-End
+
+## Tecnologia Base
+- Linguagem: **Java**
+- Framework: **Spring Boot**
+- Banco de Dados: PostgreSQL
 - Autenticação: JWT
+- Armazenamento de Objetos: MinIO (API compatível com S3)
+- Migrações de Banco: Flyway
+- Containerização: Docker e Docker Compose
 
-## Como executar (placeholder)
-> Em breve: instruções completas com Docker.
+## Descrição Geral
+O projeto consiste na implementação de uma **API REST** para gerenciamento de **artistas e álbuns**, conforme
+especificações do **Anexo II – Projeto Desenvolvedor Back End Sênior** do edital.
 
-## Funcionalidades previstas (mínimo)
-- Autenticação (login) e emissão de token JWT
-- Autorização por perfil (ex.: ADMIN e USER)
-- CRUD completo da entidade principal (ex.: Chamados/Serviços/Usuários)
-- Validação de dados e tratamento de erros
-- Testes automatizados (mínimo)
+A aplicação será desenvolvida seguindo boas práticas de engenharia de software, organização em camadas,
+versionamento de endpoints, segurança, testes automatizados e documentação técnica.
 
-## Estrutura do repositório (planejada)
-- `src/` código-fonte
-- `tests/` testes
-- `docker-compose.yml` ambiente local
-- `Dockerfile` build da aplicação
+## Funcionalidades Previstas
+- API REST versionada (`/api/v1`);
+- Relacionamento **Artista–Álbum (N:N)**;
+- Autenticação JWT com expiração e renovação;
+- Operações POST, PUT e GET;
+- Paginação e consultas parametrizadas;
+- Upload de imagens de capa de álbuns;
+- Armazenamento de imagens no MinIO;
+- Geração de links pré-assinados com expiração;
+- Health Checks (liveness/readiness);
+- Testes unitários;
+- Rate limit por usuário;
+- Notificação via WebSocket para novos álbuns cadastrados;
+- Sincronização de dados de regionais conforme endpoint externo informado no edital.
 
-## Endpoints (planejados)
-- `POST /auth/login`
-- `GET /health`
-- `POST /<recurso>`
-- `GET /<recurso>`
-- `GET /<recurso>/{id}`
-- `PUT /<recurso>/{id}`
-- `DELETE /<recurso>/{id}`
+## Execução do Projeto
+As instruções detalhadas de execução, testes e configuração do ambiente serão disponibilizadas
+neste arquivo conforme a evolução do desenvolvimento.
 
 ## Observações
-- Alterações no repositório serão realizadas até o prazo previsto no edital.
+O projeto encontra-se em desenvolvimento e será evoluído até o prazo final permitido pelo edital.
+Caso algum requisito não seja implementado integralmente, as decisões técnicas e priorizações
+serão devidamente justificadas neste documento.
